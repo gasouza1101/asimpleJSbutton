@@ -1,0 +1,26 @@
+<html>
+<head> </head>
+<body> 
+<button id="callHoliday" onclick="callHolidayCalendar()">Adicionar feriado</button>
+<script> 
+function callHolidayCalendar() {
+    var elementCreator = document.createElement("INPUT");
+    elementCreator.setAttribute("type", "date");
+    
+    var btnReset = document.createElement("BUTTON");
+    var cancelarTxt = document.createTextNode("Cancelar");
+    btnReset.appendChild(cancelarTxt);
+  
+    var btnSubmit = document.createElement("BUTTON");
+    var inserirTxt = document.createTextNode("Inserir");
+    btnSubmit.appendChild(inserirTxt);
+
+    document.getElementById("callHoliday").disabled = true;
+    document.body.appendChild(elementCreator);
+    document.body.appendChild(btnSubmit);
+    document.body.appendChild(btnReset);
+  }
+</script>
+</body>
+</html>
+
